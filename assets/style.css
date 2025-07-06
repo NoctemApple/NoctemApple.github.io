@@ -122,3 +122,10 @@ footer {
 .download-container {
   margin-top: 1.5rem;
 }
+
+#blog-list li {
+  margin: 0.75rem 0;
+}
+#blog-list a {
+  font-weight: bold;
+}

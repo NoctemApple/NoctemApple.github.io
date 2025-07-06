@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>Noctem's Blog</h1>
+
+<div>
+    <a href="/blog.html">All</a> |
+    <a href="/blog.html?category=professional">Professional</a> |
+    <a href="/blog.html?category=personal">Personal</a>
+</div>
+
+<ul id="blog-list">
+    {% for post in site.posts %}
+    <li data-category="{{ post.category }}">
+        <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }} ({{ post.category }})
+    </li>
+    {% endfor %}
+</ul>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const filter = params.get("category");
+    if (filter) {
+        document.querySelectorAll('#blog-list li').forEach(li => {
+            if (li.dataset.category !== filter) {
+                li.style.display = 'none';
+            }
+        });
+    }
+</script>

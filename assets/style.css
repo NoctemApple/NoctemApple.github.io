@@ -23,14 +23,12 @@ a:hover {
 header {
   background: #2c3e50;
   color: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;   
+  z-index: 1000;
+  padding: 0;
 }
 
 nav h1 {
@@ -155,3 +153,9 @@ main > article {
   padding: 0 1rem;
 }
 
+.header-inner {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem 2rem;
+  text-align: center;
+}

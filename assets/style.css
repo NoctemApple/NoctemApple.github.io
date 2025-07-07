@@ -150,7 +150,8 @@ main > article {
 }
 
 .content-wrapper {
-  padding: 2rem;
   max-width: 800px;
   margin: auto;
+  padding: 0 1rem;
 }
+

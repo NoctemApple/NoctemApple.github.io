@@ -142,8 +142,13 @@ main > article {
   margin: auto;
 }
 
+body {
+  padding-top: 160px;
+}
+
+
 @media (max-width: 600px) {
   body {
-    padding-top: 150px;
+    padding-top: 180px;
   }
 }

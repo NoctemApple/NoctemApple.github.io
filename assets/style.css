@@ -3,11 +3,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  padding-top: 160px;
+  padding-top: 160px; /* offset for fixed header */
   line-height: 1.6;
   background: #f9f9f9;
   color: #333;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 a {
@@ -19,16 +20,22 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header and Navigation */
+/* Header & Navigation */
 header {
   background: #2c3e50;
-  color: #fff;
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 nav h1 {
@@ -40,7 +47,7 @@ nav h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto 1rem auto;
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -49,15 +56,15 @@ nav ul {
 
 nav ul li a {
   color: white;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Optional tagline below nav */
+/* Tagline under nav */
 .intro-message {
   text-align: center;
   font-size: 1.2rem;
@@ -81,8 +88,8 @@ nav ul li a:hover {
   background: #e67e22;
   color: white;
   border-radius: 5px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .cta:hover {
@@ -96,15 +103,30 @@ section {
   margin: auto;
 }
 
-/* Footer */
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+/* Blog Post List */
+#blog-list li {
+  margin: 0.75rem 0;
 }
 
-/* Resume page */
+#blog-list a {
+  font-weight: bold;
+}
+
+/* Individual Blog Post Layout */
+main > article {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Resume Page */
 .resume-section {
   text-align: center;
   margin-top: 2rem;
@@ -128,79 +150,20 @@ footer {
   margin-top: 1.5rem;
 }
 
-#blog-list li {
-  margin: 0.75rem 0;
-}
-#blog-list a {
-  font-weight: bold;
-}
-
-main > article {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding-top: 180px;
-  }
-}
-
+/* Utility Container */
 .content-wrapper {
   max-width: 800px;
   margin: auto;
   padding: 0 1rem;
 }
 
-.header-inner {
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem 2rem;
-  text-align: center;
-}
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  body {
+    padding-top: 180px;
+  }
 
-/* Sticky Header */
-header {
-  background: #2c3e50;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Inner wrapper for centering header content */
-.header-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-/* Reset nav styles */
-nav h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+  article {
+    padding: 1rem;
+  }
 }

@@ -103,6 +103,12 @@ footer {
   margin-top: auto;
 }
 
+.footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 #hero {
   background: #34495e;
   color: white;

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Project section test duplicate for testing"
 date: 2025-07-14
 ---

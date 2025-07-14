@@ -150,6 +150,16 @@ footer {
   display: inline-block;
 }
 
+#project-list li {
+  margin: 0.75rem 0;
+}
+
+#project-list a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
 #blog-list li {
   margin: 0.75rem 0;
 }

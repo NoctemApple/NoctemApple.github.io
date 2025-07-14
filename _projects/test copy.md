@@ -1,7 +1,6 @@
 ---
 title: "Project section test duplicate for testing"
-description: "Test test test test test"
-link: "https://github.com/NoctemApple/Flower-Classifier"
+date: 2025-07-14
 ---
 
 this is a test for the project section

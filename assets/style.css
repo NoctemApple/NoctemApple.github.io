@@ -213,3 +213,9 @@ article img {
     padding: 1rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .pdf-frame {
+    height: 1200px;
+  }
+}

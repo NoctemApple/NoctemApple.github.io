@@ -35,6 +35,11 @@ main {
 
 section {
   padding: 2rem;
+  margin: auto;
+}
+
+section:not(.resume-section) {
+  padding: 2rem;
   max-width: 800px;
   margin: auto;
 }
@@ -183,19 +188,20 @@ article img {
 }
 
 .resume-section {
-  text-align: center;
-  margin-top: 2rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .pdf-container {
-  width: 100%;
-  max-width: 90vw;
-  margin: 2rem auto;
+  width: 100vw;
   padding: 0;
+  margin: 0 auto;
 }
 
 .pdf-frame {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 1000px;
   border: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

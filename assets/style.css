@@ -188,16 +188,23 @@ article img {
 }
 
 .resume-section {
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 2rem 0;
+  width: 100%;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.resume-section h2,
+.resume-section p,
+.resume-section .download-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
 }
 
 .pdf-container {
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
 }
 
 .pdf-frame {
@@ -205,6 +212,7 @@ article img {
   height: 1000px;
   border: none;
 }
+
 
 .download-container {
   margin-top: 1.5rem;

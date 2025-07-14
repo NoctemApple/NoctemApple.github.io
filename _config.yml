@@ -1,2 +1,6 @@
 title: Noctem's Portfolio
 permalink: pretty
+
+collections:
+  projects:
+    output: true

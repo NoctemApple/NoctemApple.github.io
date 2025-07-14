@@ -191,6 +191,7 @@ article img {
   width: 100vw;
   max-width: 100vw;
   margin-left: calc(-50vw + 50%);
+  padding: 2rem 0;
 }
 
 .pdf-container {
@@ -200,7 +201,6 @@ article img {
 }
 
 .pdf-frame {
-  display: block;
   width: 100%;
   height: 1000px;
   border: none;

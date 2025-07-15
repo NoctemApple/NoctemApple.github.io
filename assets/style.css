@@ -220,6 +220,7 @@ article img {
 
 .hero-buttons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -227,10 +228,19 @@ article img {
 }
 
 .hero-buttons .cta {
-  flex: 1 1 auto;
-  min-width: 140px;
+  padding: 0.75rem 1.5rem;
+  background: #e67e22;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
   text-align: center;
 }
+
+.hero-buttons .cta:hover {
+  background: #cf6a1c;
+}
+
 
 
 @media (max-width: 600px) {
@@ -253,7 +263,7 @@ article img {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero-buttons {
     flex-direction: column;
     align-items: center;

@@ -250,6 +250,27 @@ article img {
   margin-top: 2rem;
 }
 
+.divider-with-label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.divider-with-label hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider-with-label span {
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
 
 
 @media (max-width: 600px) {

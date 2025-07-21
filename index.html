@@ -32,6 +32,12 @@ permalink: /index.html
     Another fact about me is my passion for building Systems
     regardless if I know how or not as I like to learn, and adapt
   </p>
+</section>
+
+<section id="interests-toggle">
+  <button onclick="toggleInterests()">Show Interests</button>
+
+  <div id="interests-section" class="hidden">
 
   <img src="/assets/website_images/neuro.gif" alt="Gif of Neuro" style="display: block; margin: 1.5rem auto; max-width: 200px; border-radius: 12px;">
 
@@ -39,15 +45,18 @@ permalink: /index.html
     Outside of software and artificial intelligence 
     my personal interests are:
   </p>
-  <ul style="max-width: 800px; margin: 0 auto; padding-left: 1.2rem;">
-    <li><strong>Video Games:</strong> varying from Mobile games, RPGs, CRPGs, Strategy, Souls Games, and more. </li>
-    <li><strong>Music:</strong> but usually from anime, games or vtubers. </li>
-    <li><strong>VTubers:</strong> I like their singing alot, and occassionally watching them when I can. </li>
-    <li><strong>Anime:</strong> varies from Romcoms to action, whichever catches my eye. </li>
-    <li><strong>Walking:</strong> I love walking under the sun, or when exploring new places. </li>
-  </ul>
+    <ul style="max-width: 800px; margin: 0 auto; padding-left: 1.2rem;">
+      <li><strong>Video Games:</strong> varying from Mobile games, RPGs, CRPGs, Strategy, Souls Games, and more. </li>
+      <li><strong>Music:</strong> but usually from anime, games or vtubers. </li>
+      <li><strong>VTubers:</strong> I like their singing alot, and occassionally watching them when I can. </li>
+      <li><strong>Anime:</strong> varies from Romcoms to action, whichever catches my eye. </li>
+      <li><strong>Walking:</strong> I love walking under the sun, or when exploring new places. </li>
+    </ul>
 
+  </div>
 </section>
+
+
 
 <section id="contact">
   <h2>Contact</h2>
@@ -56,3 +65,19 @@ permalink: /index.html
   <p>🔗 <a href="https://github.com/NoctemApple">GitHub Profile</a></p>
   <p>🖇️ <a href="https://linkedin.com/in/joshua-wongn/">LinkedIn Profile</a></p>
 </section>
+
+
+<script>
+  function toggleInterests() {
+    const section = document.getElementById('interests-section');
+    const button = document.querySelector('#interests-toggle button');
+
+    if (section.classList.contains('hidden')) {
+      section.classList.remove('hidden');
+      button.textContent = 'Hide Interests';
+    } else {
+      section.classList.add('hidden');
+      button.textContent = 'Show Interests';
+    }
+  }
+</script>

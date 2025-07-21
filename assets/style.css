@@ -241,6 +241,15 @@ article img {
   background: #cf6a1c;
 }
 
+.hidden {
+  display: none;
+}
+
+#interests-toggle {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 
 
 @media (max-width: 600px) {
